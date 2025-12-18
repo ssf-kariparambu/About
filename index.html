@@ -1,420 +1,177 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SSF KARIPARAMBU UNIT - ABOUT</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="shortcut icon" href="https://i.ibb.co/prz4dgYj/20250522-163807-removebg-preview.png" type="image/x-icon">
-  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-  <style>
-  	@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
-/*===== VARIABLES CSS =====*/
-:root{
-      --bg:#0f172a;            /* slate-900 */
-      --panel:#111827ee;       /* gray-900 a bit transparent */
-      --card:#0b1229;          /* custom */
-      --muted:#94a3b8;         /* slate-400 */
-      --text:#e5e7eb;          /* gray-200 */
-      --brand:#22d3ee;         /* cyan-400 */
-      --brand-2:#60a5fa;       /* blue-400 */
-      --accent:#f59e0b;        /* amber-500 */
-      --radius:18px;
-      --shadow:0 10px 30px rgba(0,0,0,.35);
-    }
-:root {
-  --header-height: 3rem;
-  --font-semi: 600;
-  /*===== Colores =====*/
-  /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
-  /* HSL color mode */
-  --hue-color: 224;
-  --first-color: hsl(var(--hue-color), 89%, 60%);
-  --second-color: hsl(var(--hue-color), 56%, 12%);
-  /*===== Fuente y tipografia =====*/
-  --body-font: "Poppins", sans-serif;
-  --big-font-size: 2rem;
-  --h2-font-size: 1.25rem;
-  --normal-font-size: .938rem;
-  --smaller-font-size: .75rem;
-  /*===== Margenes =====*/
-  --mb-2: 1rem;
-  --mb-4: 2rem;
-  --mb-5: 2.5rem;
-  --mb-6: 3rem;
-  /*===== z index =====*/
-  --z-back: -10;
-  --z-fixed: 100;
-}
-@media screen and (min-width: 968px) {
-  :root {
-    --big-font-size: 3.5rem;
-    --h2-font-size: 2rem;
-    --normal-font-size: 1rem;
-    --smaller-font-size: .875rem;
-  }
-}
-    /*===== GOOGLE FONTS =====*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
-/*===== VARIABLES CSS =====*/
-:root {
-	      --brand:#22d3ee;         /* cyan-400 */
-      --brand-2:#60a5fa;      
-  --header-height: 3rem;
-  --font-semi: 600;
-  /*===== Colores =====*/
-  /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
-  /* HSL color mode */
-  --hue-color: 224;
-  --first-color: hsl(var(--hue-color), 89%, 60%);
-  --second-color: hsl(var(--hue-color), 56%, 12%);
-  /*===== Fuente y tipografia =====*/
-  --body-font: "Poppins", sans-serif;
-  --big-font-size: 2rem;
-  --h2-font-size: 1.25rem;
-  --normal-font-size: .938rem;
-  --smaller-font-size: .75rem;
-  /*===== Margenes =====*/
-  --mb-2: 1rem;
-  --mb-4: 2rem;
-  --mb-5: 2.5rem;
-  --mb-6: 3rem;
-  /*===== z index =====*/
-  --z-back: -10;
-  --z-fixed: 100;
-}
-@media screen and (min-width: 968px) {
-  :root {
-    --big-font-size: 3.5rem;
-    --h2-font-size: 2rem;
-    --normal-font-size: 1rem;
-    --smaller-font-size: .875rem;
-  }
-}
-
-/*===== BASE =====*/
-*, ::before, ::after {
-  box-sizing: border-box;
-}
-
-html {
+<!DOCTYPE html><html lang="en">  
+<head>  
+  <meta charset="UTF-8" />  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="https://i.ibb.co/prz4dgYj/20250522-163807-removebg-preview.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+  <title>SSF KARIPARAMBU - ABOUT</title>  
+  <link href="https://i.ibb.co/prz4dgYj/20250522-163807-removebg-preview.png" rel="shortcut icon" type="image/x-icon"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">  
+  <style>  
+  	html {
   scroll-behavior: smooth;
 }
-
-body {
-  margin: var(--header-height) 0 0 0;
-  font-family: var(--body-font);
-  font-size: 16px;
-  color: white;
+    body {  
+  margin: 0;  
+  font-family: 'Poppins', sans-serif;
+background: #E5E6E8;  
+  color: black;  
 }
-
-h1, h2, p {
-  
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-/*===== CLASS CSS ===== */
-.section-title {
-  position: relative;
-  font-size: var(--h2-font-size);
-  color: var(--first-color);
-  margin-top: var(--mb-2);
-  margin-bottom: var(--mb-4);
-  text-align: center;
-}
-.section-title::after {
-  position: absolute;
-  content: "";
-  width: 64px;
-  height: 0.18rem;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 2rem;
-  background-color: var(--first-color);
-}
-
-.section {
-  padding-top: 3rem;
-  padding-bottom: 2rem;
-}
-
-/*===== LAYOUT =====*/
-.bd-grid {
-  max-width: 1024px;
-  display: grid;
-  margin-left: var(--mb-2);
-  margin-right: var(--mb-2);
-}
-
-.l-header {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  height: 3.5rem;
-  left: 0;
-  z-index: var(--z-fixed);
-  background-color: #131B2E;
-  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
-}
-
-/*===== NAV =====*/
-.nav {
-  height: var(--header-height);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: var(--font-semi);
-}
-@media screen and (max-width: 767px) {
-  .nav__menu {
-    position: fixed;
-    top: var(--header-height);
-    right: -100%;
-    width: 80%;
-    height: 100%;
-    padding: 2rem;
-    background-color: var(--second-color);
-    transition: 0.5s;
-    margin-top:0.5rem; 
+  .content-space {
+    height: 50px;
   }
-}
-.nav__item {
-  margin-bottom: var(--mb-4);
-}
-.nav__link {
-  position: relative;
-  color: #fff;
-}
-.nav__link:hover {
-  position: relative;
-}
-.nav__link:hover::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 0.18rem;
-  left: 0;
-  top: 2rem;
-  background-color: var(--first-color);
-}
-.nav__logo {
-  color: var(--second-color);
-}
-.nav__toggle {
-  color: var(--second-color);
-  font-size: 2rem;
- margin-top: 7px;
-   
-}
 
-/*Active menu*/
-.active-link::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 0.18rem;
-  left: 0;
-  top: 2rem;
-  background-color: var(--first-color);
-}
+  /* Hamburger Icon */
+  .hamburger {
+    width: 30px;
+    height: 22px;
+    cursor: pointer;
+    margin-left: 24.5cm;
+    margin-top: 0.4cm;
+    position: fixed;
+    transition: 0.3s;
+  }
 
-/*=== Show menu ===*/
-.show {
-  right: 0;
-}
+  .hamburger span {
+    width: 100%;
+    height: 4px;
+    background: white;
+    position: absolute;
+    left: 0;
+    transition: 0.4s;
+    border-radius: 4px;
+  }
 
-/* ===== FOOTER =====*/
-.footer {
-width: 100%;
-height: auto;
-background-image: url("");
-background-color: black;
-background-size: cover;
+  .hamburger span:nth-child(1) { top: 0; }
+  .hamburger span:nth-child(2) { top: 9px; }
+  .hamburger span:nth-child(3) { top: 18px; }
+
+  /* When Active → X */
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 9px;
+  }
+
+  /* Menu Under Header */
+  .menu {
+    width: 220px;
+    background: #222;
+    color: white;
+    position: fixed;
+    font-size: 20px;
+    top: 51px;        /* Menu starts below header */
+    right: -220px;    /* Hidden initially */
+    height: 9.65cm;
+    transition: 0.4s;
+    z-index: 999;
+    opacity: 70%;
+  }
+
+  .menu.active {
+    right: 0;
+  }
+
+  .menu a {
+    display: block;
+    padding: 15px 20px;
+    border-bottom: 1px solid #fff;
+    color: white;
+    text-decoration: none;
+  }
+ .main-header {
+   	width: 100%;
+   height: 1.35cm;
+   background: #1B2A47;
+   position: fixed;
+   display: flex;
+   color: white;
+   flex-direction: row;
+   gap: 0.1cm;
+   align-items: center;
+}
+.logo {
+	width: 2.5rem;
+	aspect-ratio: 1/1;
+	background: white;
+	border-radius: 12px;
+	margin: 6px;
+	margin-top: 7px;
+	margin-left: 0.5cm;
+}
+.headname {
+	color: white;
+	font-size: 1.3rem;
+	font-family: sans-serif;
+	font-weight: 1500;
+	margin-left: 0.25cm;
+}
+.para {
+  width: 91%;
+  max-width: 900px;
+  margin: 1rem auto;
+  line-height: 1.7;
+  text-align: justify; /* aligns both left and right edges */
+  text-justify: inter-word; /* evenly distributes words */
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+p {
+	margin-top: 10px;
+}
+.hundredone {
+   	font-weight: 1000;
+   font-size: 1.3rem;
+   margin-top: 20px;
+   margin-left: 4.5%;
+}
+.event {
+width: 91%;
+border-radius: 12px;  
+margin-left: 4.5%;
+background: linear-gradient(135deg, #E0F7FA, #E1F5FE);
+box-shadow: 0 4px 20px rgba(0,0,0,0.08);  
 display: flex;
 flex-direction: column;
-text-align: center;
+text-align: ;
+align-items: ;
 justify-content: start;
-font-size: 2.3rem;
-color: white;
-margin-top: 20px;
-margin-bottom: -5rem;
+margin-left: ;
+margin-top: 10px;
+line-height: 1.5;
+border:1px solid black;
 }
-.footer__social {
-
-margin-top: 1vh;
+    .btn{background:linear-gradient(90deg,#22d3ee,#60a5fa);
+color:#0b1229;
+    border:none;
+    width: 100%;
+    padding: 0.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 10px;
+    margin-top: 0.5rem;
 }
-.footer__icon {
-  font-size: 2.5rem;
-  color: #fff;
-}
-.hundred {
-font-family: 'Playfair Display', serif;
-font-weight: 1000;
-margin-top: 2vh;
-}
-.hide {
-	width: 100%;
-	height: 35vh;
-	background: #E5E6E8;
-} 
-/* ===== MEDIA QUERIES=====*/
-@media screen and (max-width: 320px) {
-  .home {
-    row-gap: 2rem;
-  }
-  .home__img {
-    width: 200px;
-  }
-}
-@media screen and (min-width: 576px) {
-  .home {
-    padding: 4rem 0 2rem;
-  }
-  .home__social {
-    padding-top: 0;
-    padding-bottom: 2.5rem;
-    flex-direction: row;
-    align-self: flex-end;
-  }
-  .home__social-icon {
-    margin-bottom: 0;
-    margin-right: var(--mb-4);
-  }
-  .home__img {
-    width: 300px;
-    bottom: 25%;
-  }
-  .about__container {
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    text-align: initial;
-  }
-  .skills__container {
-    grid-template-columns: 0.7fr;
-    justify-content: center;
-    column-gap: 1rem;
-  }
-  .work__container {
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
-    padding-top: 2rem;
-  }
-  .contact__form {
-    width: 360px;
-    padding-top: 2rem;
-  }
-  .contact__container {
-    justify-items: center;
-  }
-}
-@media screen and (min-width: 768px) {
-  body {
-    margin: 0;
-  }
-  .section {
-    padding-top: 4rem;
-    padding-bottom: 3rem;
-  }
-  .section-title {
-    margin-bottom: var(--mb-6);
-  }
-  .section-title::after {
-    width: 80px;
-    top: 3rem;
-  }
-  .nav {
-    height: calc(var(--header-height) + 1.5rem);
-  }
-  .nav__list {
-    display: flex;
-    padding-top: 0;
-  }
-  .nav__item {
-    margin-left: var(--mb-6);
-    margin-bottom: 0;
-  }
-  .nav__toggle {
-    display: none;
-  }
-  .nav__link {
-    color: var(--second-color);
-  }
-  .home {
-    padding: 8rem 0 2rem;
-  }
-  .home__img {
-    width: 400px;
-    bottom: 10%;
-  }
-  .about__container {
-    padding-top: 2rem;
-  }
-  .about__img img {
-    width: 300px;
-  }
-  .skills__container {
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
-    align-items: center;
-    text-align: initial;
-  }
-  .work__container {
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 2rem;
-  }
-}
-@media screen and (min-width: 992px) {
-  .bd-grid {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .home {
-    padding: 10rem 0 2rem;
-  }
-  .home__img {
-    width: 450px;
-  }
-}
-.nav__logo {
+.events {
+width: 91%;
+border-radius: 12px;  
+margin-left: 4.5%;
+background: linear-gradient(135deg, #E0F7FA, #E1F5FE);
+box-shadow: 0 4px 20px rgba(0,0,0,0.08);  
 display: flex;
-flex-direction: row;
-}
-.img-logo {
-	margin-left: -0.5rem;
-}
-
-body {
-	background-color: #1B2A47;
-	
-}
-.ten {
-font-family: monospace;
-font-weight: 1000;
-}
-.eleven {
-font-family: 'Barlow Condensed', sans-serif;
-font-weight: 800;
-letter-spacing: 0.1rem;
+flex-direction: column;
+text-align: ;
+justify-content:start;
+margin-left: ;
+margin-top: 10px;
+height: 22.5cm;
+line-height: 1.5;
+border:1px solid black;
 }
 .thumbnail {
 width: 100%;
@@ -431,421 +188,109 @@ color: white;
 font-size: 2.4rem;
 margin-top: ;
 }
-body {
-	
-}
-.ten {
-font-family: sans-serif;
-font-weight: 1000;
-}
-.eleven{
-font-family: 'Barlow Condensed', sans-serif;
-font-weight: 800;
-letter-spacing: 0.1rem;
-}
-	.para {
-		position: ;
-	width: 100%;
-background-color: ;
-
-margin-left: ;
-margin-top: -10px;
-line-height: 1.5;
-font-weight: 1000;
-}
 .par {
 		position: ;
 	width: 92%;
-	margin-left: 4%;
+	margin-left: -2%;
 background-color: ;
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 margin-left: ;
-margin-top: -10px;
+margin-top: -1.5cm;
 line-height: 1.5;
 font-weight: 600;
 }
-p {
-font-family: 'Montserrat', sans-serif;
-}
-.hundredone {
-   	font-weight: 1000;
-   font-size: 1.3rem;
-   margin-top: 10px;
-}
-.event {
-width: 100%;
-background-color: ;
-display: flex;
-flex-direction: column;
-text-align: ;
-justify-content:start;
-margin-left: ;
-margin-top: 10px;
-line-height: 1.5;
-}
-.about1 {
-background: ;
-width: 91%;
-margin-left: 4.5%;
-}
-.poster {
-	width: 91%;
-	
-	margin-left: 4.5%;
-	margin-top: -10px;
-	border: 1.5px solid black;
-	border-radius: 2px;
-}
-.download-btn1 {
-      display: inline-block;
-      margin-top: 6px;
-      padding: 10px 20px;
-      background: #28a745;
-      color: white;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      text-align: center;
-      width: 91%;
-      margin-left: 4.5%;
-    }
-    .download-btn12 {
-      display: inline-block;
-      margin-top: -15px;
-      padding: 10px 20px;
-      background: #28a745;
-      color: white;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      text-align: center;
-      width: 100%;
-      border: -1px solid black;
-      
-    }
-    .download-btn11 {
-      display: inline-block;
-      margin-top: 6px;
-      padding: 10px 20px;
-      background: #28a745;
-      color: white;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      text-align: center;
-      width: 91%;
-      margin-left: 4.5%;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-    	
-   .hed {
-   	width: 91%;
-   margin-left: 4.5%;
-   text-align: center;
-}
-    
-    
-    
-    .sahi {
-    	width: 91%;
-    margin-left: 4.5%;
-}
-}
-        
-.nav__toggle {
-  display: inline-block;
-  cursor: pointer;
-  padding: 5px;
-}
-
-.nav__toggle div {
-  width: 25px;
-  height: 3px;
-  background-color: white;
-  margin: 5px 0;
-  transition: 0.4s;
-}
-
-.nav__toggle.change .bar1 {
-  transform: rotate(-45deg) translate(-6px, 6px);
-}
-
-.nav__toggle.change .bar2 {
-  opacity: 0;
-}
-
-.nav__toggle.change .bar3 {
-  transform: rotate(45deg) translate(-6px, -6px);
-}
-footer{
-    background-color: #060E21;
-    padding:15px;
-}
-.foot {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	gap: 10px;
+  /* Mobile & small tablets (max 760px) */
+@media (max-width: 760px) {
+	.hamburger {
+	margin-left: 9.7cm;
 }
 .logo {
-	width: 2.5rem;
-	aspect-ratio: 1/1;
-	background: white;
-	border-radius: 12px;
+	margin-left: 8.5px;
+	}
+	.headname {
+	margin-left: 0;
 }
-.headname {
-	color: white;
-	font-size: 1.3rem;
-	font-family: sans-serif;
-	font-weight: 1000;
+	.events {
+		height: 14cm;
+		}
 }
-.icons {
-	display: flex;
-	margin-top: 1rem;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;	
-	gap: 10px;
-}
-.onece {
-background: white;
-	width: 2.5rem;
-	aspect-ratio: 1/1;
-	display: flex;
-	border-radius:100%;
-	align-items: center;
-	justify-content: center;
-	font-size: 1.5rem;
-}
-.navone {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: row;
-	gap: 1.5rem;	
-	font-weight:1000;
-	font-size: 1.3rem;
-	margin-top: 2rem;
-}
-.navtwo {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: row;
-	gap: 1.5rem;	
-	font-weight:1000;
-	font-size: 1.3rem;
-	margin-top: 1.2rem;
-}
-.na {
-	color: white;
+  </style>  
+</head>  
+<body>  
+	 
 	
-}
-    .btn{background:linear-gradient(90deg,var(--brand),var(--brand-2));color:#0b1229;border:none;
-    width: 90%;
-    margin-left:5%;
-    padding: 0.5rem;
-    font-weight: 600;
-    font-size: 1rem;
-    border-radius: 10px;
-    margin-top: 0.5rem;
-}
-.card{background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);padding:10px;box-shadow:var(--shadow);
- width: 100%;
- 
-} 
-form{display:grid;gap:12px}
-    input,textarea,select{margin-left:10%;width:80%;padding:12px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.14);background:#0a1228;color:var(--text)}
-    input:focus,textarea:focus{outline:2px solid rgba(96,165,250,.45);border-color:transparent}
-   .gridgrid-2 {
-   	display: flex;
-   flex-direction: column;
-   gap: 12px;
-}
 	
-  </style>
-</head>
-<body>
-  <!--===== HEADER FROM SAHITYOTSAV =====-->
-  <header class="l-header">
-    <nav class="nav bd-grid">
-      <div>
-        <a class="nav__logo" href="https://ssf-kariparambu.github.io/Home/"><div style="margin-top:0.5rem;" class="foot">
-    <img class="logo" src="https://i.ibb.co/prz4dgYj/20250522-163807-removebg-preview.png"/>
-    <h3 class="headname">𝐒𝐒𝐅 𝐊𝐀𝐑𝐈𝐏𝐀𝐑𝐀𝐌𝐁𝐔 𝐔𝐍𝐈𝐓</h3>
-    </div></a>
-      </div>
-      <div class="nav__menu" id="nav-menu">
-        <ul class="nav__list">
-<li class="nav__item"><a class="nav__link" href="https://ssf-kariparambu.github.io/Home/">Home</a></li>
-<li class="nav__item"><a class="nav__link" href="https://ssf-kariparambu.github.io/Sahityotsav/">Sahityotsav</a></li>
-<li class="nav__item"><a class="nav__link" href="https://ssf-kariparambu.github.io/Events/">Events</a></li>
-<li class="nav__item"><a class="nav__link" href="https://ssf-kariparambu.github.io/Reports/">Reports</a></li>
-<li class="nav__item"><a class="nav__link" href="https://ssf-kariparambu.github.io/Zumra/">Zumra Updates</a></li>
-<li class="nav__item"><a class="nav__link" href="https://ssf-kariparambu.github.io/Wefi/">Wefi</a></li>
-<li class="nav__item"><a class="nav__link" href="https://ssf-kariparambu.github.io/Gallery/">Gallery</a></li>
-<li class="nav__item"><a class="nav__link" href="https://ssf-kariparambu.github.io/Merits/">Merits</a></li>
-<li class="nav__item"><a class="nav__link active-link" href="https://ssf-kariparambu.github.io/About/">About</a></li>
-        </ul>
-      </div>
-      <div class="nav__toggle" id="nav-toggle" onclick="toggleMenuIcon(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </div>
-    </nav>
-  </header>
+	<div class="main-header">
+ <img class="logo" src="https://i.ibb.co/prz4dgYj/20250522-163807-removebg-preview.png"/>
+ <h3 class="headname">𝐒𝐒𝐅 𝐊𝐀𝐑𝐈𝐏𝐀𝐑𝐀𝐌𝐁𝐔 𝐔𝐍𝐈𝐓</h3>
+</div>
+	<div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  
+  <div class="content-space"></div>
+  
+  <div class="menu" id="menu">
+  <a href="https://ssfkariparambu.github.io/Home/">Home</a>
+  <a href="https://ssfkariparambu.github.io/Sahityotsav/">Sahityotsav</a>
+  <a href="https://ssfkariparambu.github.io/Weekly-Update/">Weekly Update</a>
+  <a href="https://ssfkariparambu.github.io/Events/">Event</a>
+  <a href="https://ssfkariparambu.github.io/Wefi/">Wefi</a>
+  <a href="https://ssfkariparambu.github.io/About/">About</a></div>
 
-  <main class="l-main">
-    <!-- Include existing About page content -->
-    	        <div class="thumbnail">
+<div class="thumbnail">
         	<header class="ten" style="letter-spacing: 2.5px;"><b>ABOUT</b></header>
         </div>
             <br>
-            	<div class="about1">
-            <div class="event"><header class="hundredone">• A Legacy of Service</header></div><br>
+           
+            <div class="event" style=""><header class="hundredone">• A Legacy of Service</header>
             	<div class="para" style="text-align:justify;"><p>The SSF Kariparambu Unit Committee stands as a beacon of Islamic education, social service, and youth empowerment, deeply rooted in the rich tapestry of Kerala cultural and religious heritage. Established in 1973, the committee has been instrumental in shaping the lives of countless students.</p></div>
             </div>
-            <div class="about1">
-            <div class="event"><header class="hundredone">• A Unit Steeped in Knowledge and Service</header></div><br>
+            
+            <div class="event" style=""><header class="hundredone">• A Unit Steeped in Knowledge and Service</header>
             	<div class="para" style="text-align:justify;"><p style="line-height: 1.5; font-family: 'Montserrat', sans-serif;">Kariparambu, a unit renowned for its resiliency and progressive spirit, has been a cradle of intellectual and spiritual awakening. The region has been blessed with the presence of luminaries whose contributions have shaped the course of Islamic thought and practice.</p></div>
         </div>
-        <div class="about1">
-            <div class="event"><header class="hundredone">• Our Vision and Mission</header></div><br>
-            	<div class="para" style="text-align:justify;"><p style="line-height: 1.5; font-family: 'Montserrat', sans-serif;">SSF Kariparamba is committed to creating a society where knowledge, compassion, and unity prevail. Our vision is to empower the youth, instill strong Islamic values, and contribute meaningfully to the betterment of society.
-
-   <br><br>Through our various programs and initiatives, we aim to :<br><br>
-   	</p></div></div>
-<div class="about1">
+            <div class="event" style=""><header class="hundredone">• Our Vision and Mission</header>
+            	<div class="para" style="text-align:justify;"><p style="line-height: 1.5; font-family: 'Montserrat', sans-serif;">SSF Kariparamba is committed to creating a society where knowledge, compassion, and unity prevail. Our vision is to empower the youth, instill strong Islamic values, and contribute meaningfully to the betterment of society.<br><br>Through our various programs and initiatives, we aim to :<br><br>
+   	</p></div>
 	<div class="par" style="text-align:justify;">
  <ul>
-<li>• Provide quality education and skill development opportunities.<br><br></li>
-<li>• Undertake social welfare activities to address community needs.<br><br></li>
-<li>• Foster interfaith harmony and promote religious tolerances.<br><br></li>
-<li>• Develop leadership qualities in young people.<br><br></b></li>
-</ul></div></div>
-<div class="about1">
+• Provide quality education and skill development opportunities.<br><br>
+• Undertake social welfare activities to address community needs.<br><br>
+• Foster interfaith harmony and promote religious tolerances.<br><br>
+• Develop leadership qualities in young people.</b>
+</ul></div>
 	<div class="para" style="text-align:justify;"><p style="line-height: 1.5; font-family: 'Montserrat', sans-serif;">
 	We invite you to explore our website to learn more about our initiatives and how you can get involved.
 </p></div>
         </div>
-        	
-    <div class="about1">
-            <div class="event"><header class="hundredone">• Support Us</header></div><br>
-            	<div class="para" style="text-align:justify;"><p style="line-height: 1.5; font-family: 'Montserrat', sans-serif;">It is a youth movement working for the spiritual, cultural, and educational progress of society. Our activities aim to guide students and the community towards the path of goodness.</p></div>
-        </div>
-  </main>
-    <a href="upi://pay?pa=9645169241@upi&pn=ssfkariparambu&tn=Payment&cu=INR"><button class="btn brand">Donate Now</button></a>
-  </div>
-  <div class="about1">
-            <div class="event"><header class="hundredone">• Contact Us</header></div><br>
-            	<div class="para" style="margin-left: ;">
+	<div class="event" style=""><header class="hundredone">• SUPPORT US</header>
+	<div class="para">
+<p>
+    It is a youth movement working for the spiritual, cultural, and educational progress of society. Our activities aim to guide students and the community towards the path of goodness.
+  </p>
+    <a href="upi://pay?pa=mohdswalihk41@okicici&pn=Muhammed%20swalih%20K&aid=uGICAgKD1staVJw"><button class="btn brand">Donate Now</button></a>
+  </div></div>
+  <div class="events"><header class="hundredone">• CONTACT US</header>
+<div class="para">
   <h3 style="font-weight:600;">Address</h3>
-        <p style="" class="muted">Kariparambu, Areekode, Malappuram,<br>Kerala – 673639</p>
-        <p style="" class="muted">Email: ssfkariparambu@gmail.com<br>Phone: +91 88918 80085</p>
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d125229.77097321993!2d76.0230294!3d11.22972!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba6465beadbc2f9%3A0x7d20761f2249ffc6!2sSunni%20Juma%20Masjid!5e0!3m2!1sen!2sin!4v1756137187088!5m2!1sen!2sin" style="width:100%;height:220px;border:0;border-radius:12px" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div><br>
-<div class="card" style="height: 25.5rem;">
-        <h3 style="text-align: center;margin-top:0.9rem;color:white;">Send a Message</h3>
-        <form id="contactForm" action="https://getform.io/f/aolzoqgb" style="margin-top: 1rem;">
-          <div class="gridgrid-2">
-            <input name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-          </div>
-          <input name="subject" placeholder="Your Mobile Number" required>
-          <textarea name="message" rows="5" placeholder="Type your message..." required></textarea>
-          <button href="" style="background:linear-gradient(90deg,var(--brand),var(--brand-2));color:#0b1229;padding:7px;border-radius:8px;font-weight:600;border:1.5px solid black;width:80%;margin-left:10%;font-size:1rem;letter-spacing:1px;">Send</button>
-          <p id="contactMsg" class="muted" aria-live="polite"></p>
-        </form>
-      </div>
-      
-    </div><br>
-<footer>
-	<div class="foot">
-    <img class="logo" src="https://i.ibb.co/prz4dgYj/20250522-163807-removebg-preview.png"/>
-    <h3 class="headname">𝐒𝐒𝐅 𝐊𝐀𝐑𝐈𝐏𝐀𝐑𝐀𝐌𝐁𝐔 𝐔𝐍𝐈𝐓</h3>
-    </div>
-    <div class="icons">
-    	<div class="onece"><a href=""><i style="color:blue;" class="fa-brands fa-facebook"></i></a></div>
-    <div class="onece"><a href="https://www.instagram.com/ssfkariparambu?igsh=Y3I4bGZweGRhbmdo"><i style="background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);-webkit-background-clip: text;   /* Safari/Chrome */
-      -webkit-text-fill-color: transparent; /* Safari/Chrome */
-      background-clip: text;  /* Other browsers */
-      color: transparent;     /* Backup */
-    " class="fa-brands fa-instagram"></i></a></div>
-    <div class="onece"><a href=""><i style="color: black;" class="fa-brands fa-x-twitter"></i></a></div>
-    <div class="onece"><a href=""><i style="color: #0088CC;" class="fa-brands fa-telegram"></i></a></div>
-    <div class="onece"><a href=""><i style="color:red;" class="fa-brands fa-youtube"></i></a></div>
-</div>
-<div class="navone">
-	<a class="na" href="https://ssf-kariparambu.github.io/Home/">Home</a>
-                <a class="na" href="https://ssf-kariparambu.github.io/Sahityotsav/">Sahityotsav</a>
-                <a class="na" href="https://ssf-kariparambu.github.io/Events/">Events</a>
-</div>
-<div class="navtwo">
-	<a class="na" href="https://ssf-kariparambu.github.io/Wefi/">Wefi</a>
-                <a class="na" href="https://ssf-kariparambu.github.io/Gallery/">Gallery</a>
-	<a class="na" href="https://ssf-kariparambu.github.io/Merits/">Merits</a></li>
-                <a style="text-decoration: underline;
-	text-decoration-thickness: 4px;;
-	text-underline-offset: 8.5px;
-	text-decoration-color: #4782FF;" class="na" href="https://ssf-kariparambu.github.io/About/">About</a>
-</div>
-</footer> 
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script>
-    function toggleMenuIcon(x) {
-      x.classList.toggle("change");
-    }
+        <p class="muted">Kariparambu, Areekode, Malappuram, Kerala – 673639</p>
+        <p style="text-align:left;" class="muted">Email: ssfkariparamb@gmail.com<br>Phone: +91 88918 80085</p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d125229.77097321993!2d76.0230294!3d11.22972!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba6465beadbc2f9%3A0x7d20761f2249ffc6!2sSunni%20Juma%20Masjid!5e0!3m2!1sen!2sin!4v1756137187088!5m2!1sen!2sin" style="width:100%;aspect-ratio:16/11;;border:1px solid black;border-radius:12px"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div></div><br>
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const menu = document.getElementById("menu");
 
-    const showMenu = (toggleId, navId) => {
-      const toggle = document.getElementById(toggleId),
-        nav = document.getElementById(navId);
-      if (toggle && nav) {
-        toggle.addEventListener('click', () => {
-          nav.classList.toggle('show');
-        });
-      }
-    }
-    showMenu('nav-toggle', 'nav-menu');
-
-    const navLink = document.querySelectorAll('.nav__link');
-    function linkAction() {
-      const navMenu = document.getElementById('nav-menu');
-      navMenu.classList.remove('show');
-    }
-    navLink.forEach(n => n.addEventListener('click', linkAction));
-
-    const sections = document.querySelectorAll('section[id]');
-    const scrollActive = () => {
-      const scrollDown = window.scrollY;
-      sections.forEach(current => {
-        const sectionHeight = current.offsetHeight,
-          sectionTop = current.offsetTop - 58,
-          sectionId = current.getAttribute('id'),
-          sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']');
-        if (scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight) {
-          sectionsClass.classList.add('active-link');
-        } else {
-          sectionsClass.classList.remove('active-link');
-        }
-      });
-    }
-    window.addEventListener('scroll', scrollActive);
-
-    const sr = ScrollReveal({
-      origin: 'top',
-      distance: '60px',
-      duration: 2000,
-      delay: 200,
-    });
-    sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text', {});
-    sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img', { delay: 400 });
-    sr.reveal('.home__social-icon', { interval: 200 });
-    sr.reveal('.skills__data, .work__img, .contact__input', { interval: 200 });
-  </script>
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    menu.classList.toggle("active");
+  });
+</script>
 </body>
 	</html>
