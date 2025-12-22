@@ -287,10 +287,23 @@ font-weight: 600;
   const hamburger = document.getElementById("hamburger");
   const menu = document.getElementById("menu");
 
-  hamburger.addEventListener("click", () => {
+  // Toggle menu when hamburger clicked
+  hamburger.addEventListener("click", (e) => {
+    e.stopPropagation(); // body click avoid
     hamburger.classList.toggle("active");
     menu.classList.toggle("active");
   });
+
+  // Clicking inside menu should NOT close it
+  menu.addEventListener("click", (e) => {
+    e.stopPropagation();
+  });
+
+  // Clicking anywhere outside closes menu
+  document.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    menu.classList.remove("active");
+  });
 </script>
 </body>
-	</html>
+		</html>
